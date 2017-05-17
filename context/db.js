@@ -20,4 +20,12 @@ Object.keys(pools).map(k => {
   Promise.promisifyAll(pools[k])
 })
 
+function dump(isOnlyTableStructure) {
+  
+}
+
+function restore() {
+
+}
+
 export default pools

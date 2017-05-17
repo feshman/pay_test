@@ -6,9 +6,10 @@ const context = {}
 
 export default function contextCreator(done) {
   const services = new Ready()
-  userCreator(context, services.add('userLogin'))
+  // userCreator(context, services.add('userLogin'))
   context.services = {}
   context.services['user'] = userService
-  services.ready(done)
+  // services.ready(done)
+  done()
 }
 export { context }
